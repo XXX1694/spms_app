@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                BackButton(color: mainColor) // go Back button
+                BackButton(color: PSMSmain) // go Back button
               ],
             ),
           ),

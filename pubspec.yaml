@@ -75,6 +75,8 @@ flutter:
     - assets/icon/icon4.png
     - assets/icon/icon5.png
     - assets/icon/icon6.png
+    - assets/icon/icon_sort.png
+    - assets/icon/icon_more.png
     - assets/menu/chat_active.png
     - assets/menu/chat_disable.png
     - assets/menu/health_active.png

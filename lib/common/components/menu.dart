@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:spms_app/common/colors/main_colors.dart';
 
 class BottomMenu extends StatelessWidget {
-  const BottomMenu({Key? key}) : super(key: key);
+  const BottomMenu({Key? key, required this.active}) : super(key: key);
+
+  final String active;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 75,
+      height: 70,
       width: 390,
       margin: const EdgeInsets.all(0),
       padding: const EdgeInsets.all(0),
@@ -32,25 +34,43 @@ class BottomMenu extends StatelessWidget {
                     child: Center(
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/menu/doctor_disable.png',
-                            height: 20,
-                            width: 20,
+                          Container(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(0),
+                            child: (active == 'doctors')
+                                ? Image.asset(
+                                    'assets/menu/doctor_active.png',
+                                    height: 20,
+                                    width: 20,
+                                  )
+                                : Image.asset(
+                                    'assets/menu/doctor_disable.png',
+                                    height: 20,
+                                    width: 20,
+                                  ),
                           ),
                           const SizedBox(height: 5),
-                          const Text(
+                          Text(
                             'Doctor',
-                            style: TextStyle(
-                              color: Colors.black38,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: (active == 'doctors')
+                                ? TextStyle(
+                                    color: PSMSmain,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  )
+                                : const TextStyle(
+                                    color: Colors.black38,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                           )
                         ],
                       ),
                     ),
                   ),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/doctors');
+                  }),
               CupertinoButton(
                   padding: const EdgeInsets.all(0),
                   child: Container(
@@ -59,25 +79,43 @@ class BottomMenu extends StatelessWidget {
                     child: Center(
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/menu/health_disable.png',
-                            height: 20,
-                            width: 20,
+                          Container(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(0),
+                            child: (active == 'health')
+                                ? Image.asset(
+                                    'assets/menu/health_active.png',
+                                    height: 20,
+                                    width: 20,
+                                  )
+                                : Image.asset(
+                                    'assets/menu/health_disable.png',
+                                    height: 20,
+                                    width: 20,
+                                  ),
                           ),
                           const SizedBox(height: 5),
-                          const Text(
+                          Text(
                             'Health',
-                            style: TextStyle(
-                              color: Colors.black38,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: (active == 'health')
+                                ? TextStyle(
+                                    color: PSMSmain,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  )
+                                : const TextStyle(
+                                    color: Colors.black38,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                           )
                         ],
                       ),
                     ),
                   ),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/health');
+                  }),
               CupertinoButton(
                   padding: const EdgeInsets.all(0),
                   child: Container(
@@ -86,25 +124,43 @@ class BottomMenu extends StatelessWidget {
                     child: Center(
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/menu/chat_disable.png',
-                            height: 20,
-                            width: 20,
+                          Container(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(0),
+                            child: (active == 'chat')
+                                ? Image.asset(
+                                    'assets/menu/chat_active.png',
+                                    height: 20,
+                                    width: 20,
+                                  )
+                                : Image.asset(
+                                    'assets/menu/chat_disable.png',
+                                    height: 20,
+                                    width: 20,
+                                  ),
                           ),
                           const SizedBox(height: 5),
-                          const Text(
+                          Text(
                             'Chat',
-                            style: TextStyle(
-                              color: Colors.black38,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: (active == 'chat')
+                                ? TextStyle(
+                                    color: PSMSmain,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  )
+                                : const TextStyle(
+                                    color: Colors.black38,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                           )
                         ],
                       ),
                     ),
                   ),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/chat');
+                  }),
               CupertinoButton(
                   padding: const EdgeInsets.all(0),
                   child: Container(
@@ -113,25 +169,43 @@ class BottomMenu extends StatelessWidget {
                     child: Center(
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/menu/profile_active.png',
-                            height: 20,
-                            width: 20,
+                          Container(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(0),
+                            child: (active == 'profile')
+                                ? Image.asset(
+                                    'assets/menu/profile_active.png',
+                                    height: 20,
+                                    width: 20,
+                                  )
+                                : Image.asset(
+                                    'assets/menu/profile_disable.png',
+                                    height: 20,
+                                    width: 20,
+                                  ),
                           ),
                           const SizedBox(height: 5),
                           Text(
                             'Profile',
-                            style: TextStyle(
-                              color: mainColor,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: (active == 'profile')
+                                ? TextStyle(
+                                    color: PSMSmain,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  )
+                                : const TextStyle(
+                                    color: Colors.black38,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                           )
                         ],
                       ),
                     ),
                   ),
-                  onPressed: () {})
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/home');
+                  })
             ],
           ),
         ],

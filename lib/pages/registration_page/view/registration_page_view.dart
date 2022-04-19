@@ -25,7 +25,7 @@ class RegistrationPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 BackButton(
-                  color: mainColor,
+                  color: PSMSmain,
                 ), // go Back button
               ],
             ),

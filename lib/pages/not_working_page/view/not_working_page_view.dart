@@ -14,6 +14,7 @@ class _NotWorkingPageState extends State<NotWorkingPage> {
 
   @override
   void initState() {
+    super.initState();
     audioCache.load('sfx/1.mp3');
     audioCache.play('sfx/1.mp3');
   }
@@ -30,7 +31,7 @@ class _NotWorkingPageState extends State<NotWorkingPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  BackButton(color: mainColor) // go Back button
+                  BackButton(color: PSMSmain) // go Back button
                 ],
               ),
             ),

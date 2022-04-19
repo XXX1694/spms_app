@@ -26,7 +26,7 @@ class BottomText extends StatelessWidget {
               'Sign Up',
               style: TextStyle(
                 fontSize: 16,
-                color: mainColor,
+                color: PSMSmain,
                 fontWeight: FontWeight.w600,
               ),
             ),

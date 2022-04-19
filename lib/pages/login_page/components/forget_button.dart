@@ -16,7 +16,7 @@ class ForgetPassword extends StatelessWidget {
         child: Text(
           'Forgot Password?',
           style: TextStyle(
-            color: mainColor,
+            color: PSMSmain,
             fontSize: 16,
             fontWeight: FontWeight.w700,
           ),

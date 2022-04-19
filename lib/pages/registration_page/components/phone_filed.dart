@@ -61,7 +61,7 @@ class PhoneFiled extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: mainColor,
+                    color: PSMSmain,
                   ),
                   borderRadius: const BorderRadius.all(
                     Radius.circular(8),

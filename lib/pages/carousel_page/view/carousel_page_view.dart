@@ -42,21 +42,13 @@ class _CarouselPageState extends State<CarouselPage> {
           Center(
             child: Column(
               children: [
-                const SizedBox(
-                  height: 550,
-                ),
-                const MainText(),
-                const SizedBox(
-                  height: 20,
-                ),
-                const SecondText(),
-                const SizedBox(
-                  height: 35,
-                ),
+                const SizedBox(height: 550),
+                const MainText(), // Main text
+                const SizedBox(height: 20),
+                const SecondText(), // Second text
+                const SizedBox(height: 35),
                 buildIndicator(),
-                const SizedBox(
-                  height: 40,
-                ),
+                const SizedBox(height: 40),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
                   child: MainButton(txt: 'Get Started', pass: '/login'),
@@ -87,7 +79,7 @@ class _CarouselPageState extends State<CarouselPage> {
           dotHeight: 8,
           dotWidth: 8,
           dotColor: Colors.black12,
-          activeDotColor: mainColor,
+          activeDotColor: PSMSmain,
         ),
       );
 }
