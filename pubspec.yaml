@@ -86,6 +86,12 @@ flutter:
     - assets/menu/profile_active.png
     - assets/menu/profile_disable.png
     - assets/sfx/1.mp3
+    - assets/stars/star1_disable.png
+    - assets/stars/star2_disable.png
+    - assets/stars/star3_disable.png
+    - assets/stars/star4_disable.png
+    - assets/stars/star5_disable.png
+    - assets/stars/starall_active.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

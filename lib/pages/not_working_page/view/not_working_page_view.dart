@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:spms_app/pages/not_working_page/components/main_image.dart';
+import 'package:spms_app/pages/not_working_page/components/main_text.dart';
 import '../../../common/colors/main_colors.dart';
 
 class NotWorkingPage extends StatefulWidget {
@@ -30,34 +32,13 @@ class _NotWorkingPageState extends State<NotWorkingPage> {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  BackButton(color: PSMSmain) // go Back button
-                ],
+                children: [BackButton(color: PSMSmain)], // go Back button
               ),
             ),
-            const SizedBox(height: 120), //name
-            const Text(
-              'Sorry,',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 32,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            const Text(
-              'not working!',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 32,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+            const SizedBox(height: 120),
+            const MainText(), // Main Text
             const SizedBox(height: 60),
-            Image.asset(
-              'assets/img/nowork.png',
-              height: 300,
-              width: 300,
-            )
+            const MainImage(), // Main Image
           ],
         ),
       ),

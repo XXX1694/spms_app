@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:spms_app/common/colors/main_colors.dart';
 
-class MainText extends StatelessWidget {
-  const MainText({Key? key}) : super(key: key);
+class BottomText extends StatelessWidget {
+  const BottomText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,11 +10,11 @@ class MainText extends StatelessWidget {
       margin: const EdgeInsets.all(0),
       padding: const EdgeInsets.all(0),
       child: Text(
-        'Message',
+        'ver 1.01',
         style: TextStyle(
-          color: PSMSblack,
-          fontWeight: FontWeight.w700,
-          fontSize: 22,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          color: PSMSblack40,
         ),
       ),
     );

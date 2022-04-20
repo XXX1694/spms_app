@@ -24,28 +24,24 @@ class ChatPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        BackButton(color: PSMSmain), // Back button
-                      ],
+                      children: [BackButton(color: PSMSmain)], // Back Button
                     ),
                   ),
-                  const MainText(), // Main text
+                  const MainText(), // Main Text
                   Expanded(child: Container()),
-                  const FunctionButton(), //Function button
-                  const SizedBox(width: 20),
+                  const FunctionButton(), //Function Button
+                  const SizedBox(width: 10),
                 ],
               ),
               const SizedBox(height: 25),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: SearchFiled(), // Secrch filed
+                child: SearchFiled(), // Secrch Filed
               ),
               const SizedBox(height: 25),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Expanded(
-                  child: ChatList(), // Chat list
-                ),
+                child: Expanded(child: ChatList()), // Chat List
               )
             ],
           ),

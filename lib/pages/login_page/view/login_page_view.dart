@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                 SizedBox(height: 25),
                 MainButton(txt: 'Login', pass: '/home'), // Login Button
                 SizedBox(height: 100),
-                BottomText(),
+                BottomText(), // Bottom text
               ],
             ),
           )

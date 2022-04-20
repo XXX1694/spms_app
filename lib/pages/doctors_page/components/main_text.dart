@@ -10,7 +10,7 @@ class MainText extends StatelessWidget {
       margin: const EdgeInsets.all(0),
       padding: const EdgeInsets.all(0),
       child: Text(
-        'Message',
+        'Doctors',
         style: TextStyle(
           color: PSMSblack,
           fontWeight: FontWeight.w700,

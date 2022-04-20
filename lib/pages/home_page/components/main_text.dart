@@ -10,11 +10,11 @@ class MainText extends StatelessWidget {
       margin: const EdgeInsets.all(0),
       padding: const EdgeInsets.all(0),
       child: Text(
-        'Message',
+        'Serikbay Abzal',
         style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.w600,
           color: PSMSblack,
-          fontWeight: FontWeight.w700,
-          fontSize: 22,
         ),
       ),
     );
