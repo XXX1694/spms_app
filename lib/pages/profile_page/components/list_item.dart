@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:spms_app/common/colors/main_colors.dart';
 
 class MenuElement extends StatelessWidget {
-  const MenuElement({Key? key, required this.img, required this.txt})
+  const MenuElement(
+      {Key? key, required this.img, required this.txt, required this.page})
       : super(key: key);
 
   final String img;
   final String txt;
+  final int page;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +43,7 @@ class MenuElement extends StatelessWidget {
               RotatedBox(
                 quarterTurns: 2,
                 child: BackButton(
-                  color: PSMSblack,
+                  color: PSMSblack60,
                   onPressed: (() {}),
                 ),
               ),
@@ -49,6 +51,14 @@ class MenuElement extends StatelessWidget {
             ],
           ),
         ),
-        onPressed: () {});
+        onPressed: () {
+          if (page == 1) {}
+          if (page == 2) {}
+          if (page == 3) {}
+          if (page == 4) {}
+          if (page == 5) {
+            Navigator.pushNamed(context, '/login');
+          }
+        });
   }
 }

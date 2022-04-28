@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "734153427215",
+    "project_id": "spms-app-test",
+    "storage_bucket": "spms-app-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734153427215:android:c39382248075169af3d67a",
+        "android_client_info": {
+          "package_name": "com.example.spms_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734153427215-8rnuvreuk5t5e57gfib419d7p3f2lg25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY8NX-ym-GEnXdBgBYO-dKlFgviSM0wuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734153427215-8rnuvreuk5t5e57gfib419d7p3f2lg25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

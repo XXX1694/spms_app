@@ -28,7 +28,7 @@ class MainButton extends StatelessWidget {
           width: double.infinity,
           height: 55,
           decoration: BoxDecoration(
-            color: PSMSmain,
+            color: PSMSmain100,
             borderRadius: BorderRadius.circular(8),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spms_app/common/colors/main_colors.dart';
 
 class SecondText extends StatelessWidget {
   const SecondText({Key? key}) : super(key: key);
@@ -9,11 +10,11 @@ class SecondText extends StatelessWidget {
       margin: const EdgeInsets.all(0),
       padding: const EdgeInsets.all(0),
       child: Column(
-        children: const [
+        children: [
           Text(
             'System will mointor you',
             style: TextStyle(
-              color: Colors.black54,
+              color: PSMSblack60,
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -21,7 +22,7 @@ class SecondText extends StatelessWidget {
           Text(
             'health in real-time',
             style: TextStyle(
-              color: Colors.black54,
+              color: PSMSblack60,
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),

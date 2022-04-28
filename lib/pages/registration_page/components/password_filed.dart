@@ -35,7 +35,7 @@ class _PasswordFiledState extends State<PasswordFiled> {
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: PSMSmain,
+              color: PSMSmain100,
             ),
             borderRadius: const BorderRadius.all(
               Radius.circular(8),
@@ -49,7 +49,7 @@ class _PasswordFiledState extends State<PasswordFiled> {
           ),
           suffixIcon: IconButton(
             icon: isPasswordVisible
-                ? Icon(Icons.visibility_off, color: PSMSmain)
+                ? Icon(Icons.visibility_off, color: PSMSmain100)
                 : const Icon(Icons.visibility, color: Colors.black26),
             onPressed: () => setState(
               () => isPasswordVisible = !isPasswordVisible,

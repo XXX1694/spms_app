@@ -24,7 +24,7 @@ class ChatPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: [BackButton(color: PSMSmain)], // Back Button
+                      children: [BackButton(color: PSMSmain100)], // Back Button
                     ),
                   ),
                   const MainText(), // Main Text

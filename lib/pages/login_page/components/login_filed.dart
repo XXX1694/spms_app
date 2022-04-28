@@ -14,27 +14,27 @@ class LoginFiled extends StatelessWidget {
         keyboardType: TextInputType.emailAddress,
         textInputAction: TextInputAction.done,
         decoration: InputDecoration(
-          border: const OutlineInputBorder(
+          border: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.black26,
+              color: PSMSblack20,
             ),
-            borderRadius: BorderRadius.all(
+            borderRadius: const BorderRadius.all(
               Radius.circular(8),
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: PSMSmain,
+              color: PSMSmain100,
             ),
             borderRadius: const BorderRadius.all(
               Radius.circular(8),
             ),
           ),
           hintText: 'Email Adress',
-          hintStyle: const TextStyle(
+          hintStyle: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w400,
-            color: Colors.black26,
+            color: PSMSblack20,
           ),
         ),
       ),

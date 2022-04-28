@@ -32,7 +32,7 @@ class _NotWorkingPageState extends State<NotWorkingPage> {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [BackButton(color: PSMSmain)], // go Back button
+                children: [BackButton(color: PSMSmain100)], // go Back button
               ),
             ),
             const SizedBox(height: 120),

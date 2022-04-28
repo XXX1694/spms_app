@@ -27,6 +27,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  firebase_auth: ^3.3.4
+  page_transition: "^2.0.5"
   carousel_slider: ^4.0.0
   smooth_page_indicator: ^1.0.0+2
   country_code_picker: ^2.0.2
@@ -38,6 +40,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  firebase_auth_web: ^3.3.13
 
 dev_dependencies:
   flutter_test:
@@ -63,35 +66,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/img/main.png
-    - assets/img/noimg.png
-    - assets/img/slider.png
-    - assets/img/backbtn.png
-    - assets/img/decor.png
-    - assets/img/nowork.png
-    - assets/icon/icon1.png
-    - assets/icon/icon2.png
-    - assets/icon/icon3.png
-    - assets/icon/icon4.png
-    - assets/icon/icon5.png
-    - assets/icon/icon6.png
-    - assets/icon/icon_sort.png
-    - assets/icon/icon_more.png
-    - assets/menu/chat_active.png
-    - assets/menu/chat_disable.png
-    - assets/menu/health_active.png
-    - assets/menu/health_disable.png
-    - assets/menu/doctor_active.png
-    - assets/menu/doctor_disable.png
-    - assets/menu/profile_active.png
-    - assets/menu/profile_disable.png
-    - assets/sfx/1.mp3
-    - assets/stars/star1_disable.png
-    - assets/stars/star2_disable.png
-    - assets/stars/star3_disable.png
-    - assets/stars/star4_disable.png
-    - assets/stars/star5_disable.png
-    - assets/stars/starall_active.png
+    - assets/img/
+    - assets/icon/
+    - assets/menu/
+    - assets/sfx/1.mp3    
+    - assets/stars/
+    # - assets/stars/star2_disable.png
+    # - assets/stars/star3_disable.png
+    # - assets/stars/star4_disable.png
+    # - assets/stars/star5_disable.png
+    # - assets/stars/starall_active.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

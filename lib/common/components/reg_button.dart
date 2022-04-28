@@ -22,7 +22,7 @@ class RegButton extends StatelessWidget {
               Text(
                 txt,
                 style: TextStyle(
-                  color: PSMSmain,
+                  color: PSMSmain100,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),

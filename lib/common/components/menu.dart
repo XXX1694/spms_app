@@ -54,7 +54,7 @@ class BottomMenu extends StatelessWidget {
                             'Doctor',
                             style: (active == 'doctors')
                                 ? TextStyle(
-                                    color: PSMSmain,
+                                    color: PSMSmain100,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w600,
                                   )
@@ -99,7 +99,7 @@ class BottomMenu extends StatelessWidget {
                             'Health',
                             style: (active == 'health')
                                 ? TextStyle(
-                                    color: PSMSmain,
+                                    color: PSMSmain100,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w600,
                                   )
@@ -144,7 +144,7 @@ class BottomMenu extends StatelessWidget {
                             'Chat',
                             style: (active == 'chat')
                                 ? TextStyle(
-                                    color: PSMSmain,
+                                    color: PSMSmain100,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w600,
                                   )
@@ -189,7 +189,7 @@ class BottomMenu extends StatelessWidget {
                             'Profile',
                             style: (active == 'profile')
                                 ? TextStyle(
-                                    color: PSMSmain,
+                                    color: PSMSmain100,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w600,
                                   )

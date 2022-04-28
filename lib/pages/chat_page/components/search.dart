@@ -24,7 +24,7 @@ class SearchFiled extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: PSMSmain,
+                color: PSMSmain100,
               ),
               borderRadius: const BorderRadius.all(
                 Radius.circular(20),
@@ -36,7 +36,7 @@ class SearchFiled extends StatelessWidget {
               fontWeight: FontWeight.w500,
               color: Colors.black54,
             ),
-            suffixIcon: Icon(Icons.search, color: PSMSmain)),
+            suffixIcon: Icon(Icons.search, color: PSMSmain100)),
       ),
     );
   }

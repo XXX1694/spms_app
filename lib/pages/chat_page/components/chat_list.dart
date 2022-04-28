@@ -18,10 +18,10 @@ class ChatList extends StatelessWidget {
           return Container(
               margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
               padding: const EdgeInsets.all(0),
-              height: 75,
+              height: 80,
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: Colors.black26,
+                  color: PSMSblack20,
                   width: 1,
                 ),
                 borderRadius: BorderRadius.circular(10),
@@ -34,47 +34,46 @@ class ChatList extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.all(0),
                       padding: const EdgeInsets.all(0),
-                      height: 55,
-                      width: 55,
+                      height: 60,
+                      width: 60,
                       child: const CircleAvatar(
                         backgroundColor: Color(0xFFE5E5E5),
                       ),
                     ),
-                    const SizedBox(width: 20),
+                    const SizedBox(width: 10),
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        SizedBox(height: 10),
-                        Text(
+                      children: [
+                        const Text(
                           'Abzal Serikbay',
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 22,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 5),
                         Text(
                           'How are you my friend?',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.black38,
+                            color: PSMSblack40,
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(width: 95),
+                    const Expanded(child: SizedBox()),
                     Column(
                       children: [
                         Container(
                           margin: const EdgeInsets.all(0),
                           padding: const EdgeInsets.all(0),
-                          height: 20,
-                          width: 20,
+                          height: 25,
+                          width: 25,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: PSMSmain,
+                            color: PSMSmain100,
                           ),
                           child: const Center(
                             child: Text(
@@ -82,22 +81,23 @@ class ChatList extends StatelessWidget {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
-                                fontSize: 10,
+                                fontSize: 14,
                               ),
                             ),
                           ),
                         ),
                         const SizedBox(height: 15),
-                        const Text(
+                        Text(
                           '10.04',
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontSize: 12,
-                            color: Colors.black54,
+                            fontSize: 14,
+                            color: PSMSblack60,
                           ),
                         )
                       ],
                     ),
+                    const SizedBox(width: 15),
                   ],
                 ),
               ));

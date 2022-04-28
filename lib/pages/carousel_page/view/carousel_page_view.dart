@@ -51,7 +51,7 @@ class _CarouselPageState extends State<CarouselPage> {
                 const SizedBox(height: 40),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: MainButton(txt: 'Get Started', pass: '/login'),
+                  child: MainButton(txt: 'Get Started', pass: '/home'),
                 ),
               ],
             ),
@@ -79,7 +79,7 @@ class _CarouselPageState extends State<CarouselPage> {
           dotHeight: 8,
           dotWidth: 8,
           dotColor: Colors.black12,
-          activeDotColor: PSMSmain,
+          activeDotColor: PSMSmain100,
         ),
       );
 }

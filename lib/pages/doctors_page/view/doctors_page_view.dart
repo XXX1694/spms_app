@@ -24,19 +24,19 @@ class DoctorsPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: [BackButton(color: PSMSmain)], // Back Button
+                      children: [BackButton(color: PSMSmain100)], // Back Button
                     ),
                   ),
                   const MainText(), // Main Text
                   Expanded(child: Container()),
                   const FunctionButton(), //Function Button
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 20),
                 ],
               ),
               const SizedBox(height: 25),
-              const Stars(),
+              const Stars(), // Stars
               const SizedBox(height: 25),
-              const DoctorsList(),
+              const DoctorsList(), // Doctors Display
             ],
           ),
           const Align(
